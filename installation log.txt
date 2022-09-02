@@ -1,0 +1,87 @@
+Playwright install ====================================
+
+PS C:\workspace\playwright> npm init playwright@latest
+npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
+Getting started with writing end-to-end tests with Playwright:
+Initializing project in '.'
+√ Do you want to use TypeScript or JavaScript? · TypeScript
+√ Where to put your end-to-end tests? · tests
+√ Add a GitHub Actions workflow? (y/N) · true
+Initializing NPM project (npm init -y)…
+npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
+Wrote to C:\workspace\playwright\package.json:
+
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+Installing Playwright Test (npm install --save-dev @playwright/test)…
+npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
+
+added 3 packages, and audited 4 packages in 2s
+
+found 0 vulnerabilities
+Downloading browsers (npx playwright install)…
+npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
+Writing playwright.config.ts.
+Writing .github\workflows\playwright.yml.
+Writing tests\example.spec.ts.
+Writing tests-examples\demo-todo-app.spec.ts.
+Writing package.json.
+✔ Success! Created a Playwright Test project at C:\workspace\playwright
+
+Inside that directory, you can run several commands:
+
+  npx playwright test
+    Runs the end-to-end tests.
+
+  npx playwright test --project=chromium
+    Runs the tests only on Desktop Chrome.
+
+  npx playwright test example
+    Runs the tests in a specific file.
+
+  npx playwright test --debug
+    Runs the tests in debug mode.
+
+  npx playwright codegen
+    Auto generate tests with Codegen.
+
+We suggest that you begin by typing:
+
+    npx playwright test
+
+And check out the following files:
+  - .\tests\example.spec.ts - Example end-to-end test
+  - .\tests-examples\demo-todo-app.spec.ts - Demo Todo App end-to-end tests
+  - .\playwright.config.ts - Playwright Test configuration
+
+Visit https://playwright.dev/docs/intro for more information. ✨
+
+Happy hacking! 🎭
+
+
+================ Record tests =================================
+npx playwright codegen --viewport-size=1920,960 https://hudppmpoctest.crm6.dynamics.com/main.aspx
+
+
+==== Save state
+npx playwright codegen --viewport-size=1920,960 --save-storage=auth.json https://hudppmpoctest.crm6.dynamics.com/main.aspx
+
+==== Load state
+npx playwright codegen --viewport-size=1920,960 --load-storage=auth.json https://hudppmpoctest.crm6.dynamics.com/main.aspx
+npx playwright open --viewport-size=1920,960 --load-storage=auth.json https://hudppmpoctest.crm6.dynamics.com/main.
+
+==== Run test
+npx playwright test ppm_test
+npx playwright test ppm_test --project=chromium --headed
