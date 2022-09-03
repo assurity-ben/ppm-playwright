@@ -6,7 +6,7 @@
   "scripts": {
     "setup": "npx playwright install",
     "test": "npx playwright test",
-    "test:e2e": "cucumber-js --require cucumber.conf.js --require tests/acceptance/stepDefinitions/**/*.js --format @cucumber/pretty-formatter"
+    "test:e2e": "cucumber-js --require cucumber.conf.js --publish --require tests/acceptance/stepDefinitions/**/*.js --format @cucumber/pretty-formatter"
   },
   "keywords": [],
   "author": "",

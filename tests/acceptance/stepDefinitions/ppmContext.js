@@ -56,7 +56,7 @@ Then('I can create and send an invitation to register on the portal', async func
         return page.locator('li[aria-label="Email from Test Account"]').isVisible();
     }, {
         intervals: [1_000, 2_000, 5_000],
-        timeout: 30_000
+        timeout: 60_000
     }).toBeTruthy();
 
     await page.locator('li[aria-label="Email from Test Account"]').click();
